@@ -17,7 +17,7 @@ When you compile this you'll need to do it twice! That sounds odd, but this expl
 So, compile it once, look at the size (in bytes) of the exe, type that number where you see the NNNNNNs, then compile again. The program appends the encrypted data onto the end of a duplicate copy of the first EXE_SIZE bytes of itself. The reason it can't just look at its own current filesize is that there may already be data appended there. There are 2 main modes the code is compiled in, a CLI and an MFC app. They both do the same job.
 
 # Info
-Here's some info I copied from the web:
+Here's some info I got from the web. [Here is the original source](https://www.iusmentis.com/security/passphrasefaq/practical/).
 
 A dictionary [3] has around 74,000 words in it. Using the 128 bit key size we then need, log(2^128) / log(74,000) = 7.91,
 random words from our dictionary. Rounding up, you will then need 8 random words to make the passphrase harder than the
